@@ -1,0 +1,85 @@
+1° exercício
+
+SISTEMA DE UMA PROVA
+
+=> O usuário deve realizar um login(usuário e senha) para abrir a prova. Se o login não estiver certo o sistema não deve abrir a prova.
+=> O tema da prova é a matéria que estudamos até agora.
+=> A prova tem 10 perguntas.
+=> Cada pergunta tem 05 respostas.
+	+ 01 resposta certa.
+	+ 04 respostas erradas.
+	+ O usuário deve escolher somente uma resposta. 
+=> Quando o usuário terminar a prova, o sistema deve contar quantas respostas estavam certas e erradas.
+=> Quando tiver resposta errada, o sistema deve mostrar qual era a resposta certa. 
+=> Se o números de acertos forem maior ou igual a 7, o sistema deve mostrar uma mensagem " Parabéns você foi APROVADO ", senão mostrar " Dessa vez não deu. Você foi REPROVADO ".
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FLUXO NORMAL
+
+RF1) O usuário deve digitar seu "usuário"
+
+RF2) Sistema guarda os dados relativos ao RF1
+
+RF3) O usuário deve digitar sua senha 
+
+RF4) Sistema guarda os dados relativos ao RF2
+
+RF5) Sistema mostra o tema da prova
+
+RF6) Sistema mostra as 10 perguntas relativos ao RF5
+
+RF7) Sistema deve mostrar as 5 respostas sendo elas 1 certa e 4 erradas
+
+RF8) O usuário deve escolher somente uma resposta relativos ao RF7
+
+RF9) O sistema guarda os dados relativos ao RF8
+
+RF10) Sistema deve contar quantas respostas estavam certas e erradas assim que o usuário terminar a prova
+
+RF11) O sistema mostra " Parabéns você foi APROVADO " se os acertos forem maior ou igual a 7, se for menor que 7 o sistema deve mostra " Dessa vez não deu. Você foi REPROVADO "
+
+FLUXO DE ERRO 
+
+RF12) Se o tipo de dado do RF1 for numérico, o sistema mostra uma mensagem de erro
+
+RF12) Se o usuário marcar mais de uma resposta, o sistema mostra uma mensagem de erro 
+
+RF13) Se o login relativo ao dados do RF1 estiver errado o sistema não deve abrir a prova
+=======================================================================================================================
+
+2° exercício
+
+ Sistema de conta bancária  
+
+1) O usuário deve registrar o valor inicial da conta (esse processo deve ser realizado somente uma única vez).
+2) O sistema deve pedir ao usuário para fazer login.
+3) Se o login for falso o sistema não deixa o usuário manipular sua conta. 
+4) Se o login for verdadeiro o sistema deve possibilitar o usuário a depositar ou sacar de sua conta.
+5) Quando o usuário depositar, o sistema deve acrescentar o valor do depósito no saldo atual.
+6) Quando o usuário sacar, o sistema deve subtrair o valor do saque no saldo atual. Regra para sacar: somente pode sacar um valor igual ou abaixo do saldo atual.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FLUXO NORMAL
+
+RF1) O usuário deve digitar o valor inicial da sua conta, esse processo deve ser realizado somente uma única vez
+
+RF2) Sistema guarda os dados relativos ao RF1
+
+RF3) O sistema deve pedir para que o usuário faça um login
+
+RF4) Sistema guarda os dados relativos ao RF3
+
+RF5) Sistema deve possibilitar o usuário a depositar ou sacar de sua conta se o login for verdadeiro
+
+RF6) O sistema deve acrescentar o valor de deposito da sua conta e saldo quando o usuario depositar 
+
+RF7) O sistema deve subtrair o valor do saque no saldo atual quando o usuario sacar, podendo sacar somente igual ou abaixo do saldo atual
+
+FLUXO DE ERRO
+
+RF8) Se o login relativo ao RF3 for falso, o sistema não deixa o usuário manipular sua conta.
+
+RF9) Se o saque relativo ao RF7 for superior ao saldo atual, o sistema deve mostrar uma mensagem " Valor de saque maior que o seu saldo "
+
+
+
+
+
